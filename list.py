@@ -1,3 +1,9 @@
+ #################################################
+ # CS03B - Summer 2026
+ # Assignment 2 - Question 1
+ # Student Name: John Nguyen
+ # SID: 20319444
+ #################################################
 class Listclass:
     def __init__(self): #declaring local variables
         self.things = []
@@ -6,11 +12,13 @@ class Listclass:
 
     def get_list(self):
         list_size = int(input("Enter the size of list: ")) #list must match size for dict conversion
+
         for i in range(list_size): #loop entry for data
             entry = input("Enter next list entry: ")
             self.things.append(entry)
             entry = input("Enter next key entry: ")
             self.keys.append(entry)
+
         print("Input:") 
         print(self.things)
         print(self.keys)
